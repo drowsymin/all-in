@@ -1,0 +1,298 @@
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.flexx-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+.flexx-container > div {
+  background-color: #f1f1f1;
+  align-content: center;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 25px;
+  font-size: 20px;
+  border-style: outset;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: black;
+  color:  #fff;
+  font-size: 50px;
+  line-height: 2;
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  text-shadow: 3px 3px #A9A9F5;
+}
+
+
+
+.footer {
+  background: black;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 50px 0 20px;
+}
+
+.explanation {
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-family: 'Roboto Mono', monospace;
+}
+.main {
+  text-align: left;
+  font-family: 'Ubuntu', sans-serif;
+  background: black;
+  color: #fff;
+}
+
+.aside-1 {
+  background: black;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  text-shadow: 1px 1px #A9A9F5;
+}
+
+.aside-2 {
+  background: black;
+  color:  #fff;
+  font-family: 'Ubuntu', sans-serif;
+  text-shadow: 1px 1px #A9A9F5;
+
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+a {
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h2 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 15px;
+}
+
+a:visited {color:#BDBDBD;}
+a:hover {color:#BCA9F5;}
+
+a.one:link {color:#0000FF;}
+a.one:visited {color:#A4A4A4;}
+a.one:hover {color:#BCA9F5;}
+
+a.footer-link:visited {color:#BDBDBD;}
+a.footer-link:hover {color:#BCA9F5;}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* slideshow gallery */
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+   opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1.0;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.5;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.bottom-container {
+background-color: black;
+padding: 50px 0 20px;
+}
+
+.actor {
+  border-radius: 50%;
+  margin: 40px auto 60px;
+}
+
+.perf-title {
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.btn {
+  background: #505355;
+  background-image: -webkit-linear-gradient(top, #505355, #111213);
+  background-image: -moz-linear-gradient(top, #505355, #111213);
+  background-image: -ms-linear-gradient(top, #505355, #111213);
+  background-image: -o-linear-gradient(top, #505355, #111213);
+  background-image: linear-gradient(to bottom, #505355, #111213);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+
+  color: black;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #4779C6;
+  background-image: -webkit-linear-gradient(top, #4779C6, #0F002C);
+  background-image: -moz-linear-gradient(top, #4779C6, #0F002C);
+  background-image: -ms-linear-gradient(top, #4779C6, #0F002C);
+  background-image: -o-linear-gradient(top, #4779C6, #0F002C);
+  background-image: linear-gradient(to bottom, #4779C6, #0F002C);
+  text-decoration: none;
+}
+
+body {
+  padding: 2em;
+}
